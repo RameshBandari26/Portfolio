@@ -31,7 +31,7 @@ const About = () => {
   <div className="mt-6 flex space-x-4">
 
   <a
-  href="https://drive.google.com/file/d/1fL59SmX3nlbxnF3PQsj_ptb4mlISHp_K/view?usp=drive_link"
+  href="https://drive.google.com/file/d/1nkodOsj1AhQH3E59SfqH5Eh5MhA0w0PX/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
   className="px-5 py-2 rounded-lg bg-orange-100 text-orange-800 font-medium transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-[0_0_15px_rgba(251,146,60,0.6)] dark:bg-orange-900 dark:text-white dark:hover:shadow-[0_0_15px_rgba(251,146,60,0.8)]"
@@ -39,7 +39,7 @@ const About = () => {
   View Resume
 </a>
 <a
-  href="https://drive.google.com/uc?export=download&id=1fL59SmX3nlbxnF3PQsj_ptb4mlISHp_K"
+  href="https://drive.google.com/uc?export=download&id=1nkodOsj1AhQH3E59SfqH5Eh5MhA0w0PX"
   className="px-5 py-2 rounded-lg bg-orange-600 text-white font-medium transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-[0_0_20px_rgba(234,88,12,0.8)]"
 >
   Download Resume
