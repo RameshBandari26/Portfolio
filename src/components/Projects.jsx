@@ -45,8 +45,8 @@ const Project = () => {
         },
       ],
       links: {
-        view: "https://rameshbandari.com",
-        code: "https://github.com/yourusername/portfolio",
+        view: "https://rameshbandari.netlify.app/",
+        code: "https://github.com/RameshBandari26/Portfolio",
       },
     },
 
