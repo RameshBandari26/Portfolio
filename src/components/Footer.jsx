@@ -50,7 +50,7 @@ const Footer = () => {
           </p> */}
           <p className="text-sm text-gray-400 mb-2">
             <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-orange-500" />
-            bandariramesh377@gmail.com
+            rameshbandari926@gmail.com
           </p>
           <p className="text-sm text-gray-400 mb-4">
             <FontAwesomeIcon icon={faMapMarkedAlt} className="mr-2 text-orange-500" />
@@ -63,7 +63,7 @@ const Footer = () => {
             <a href="https://github.com/RameshBandari26" target="_blank" rel="noreferrer" aria-label="GitHub">
               <FontAwesomeIcon icon={faGithub} className="hover:text-orange-500" />
             </a>
-            <a href="mailto:jigarsable21@gmail.com" target="_blank" rel="noreferrer" aria-label="Email">
+            <a href="mailto:rameshbandari926@gmail.com" target="_blank" rel="noreferrer" aria-label="Email">
               <FontAwesomeIcon icon={faEnvelope} className="hover:text-orange-500" />
             </a>
             {/* <a href="https://twitter.com/jigar_sable" target="_blank" rel="noreferrer" aria-label="Twitter">
