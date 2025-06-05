@@ -18,6 +18,8 @@ This is a modern, responsive **developer portfolio website** built with **React 
 ---
 
 ## Live Demo
+🚀 Deployment
+This portfolio is live and deployed using Netlify.
 You can access the deployed application here: [Portfolio](https://rameshbandari.netlify.app/)
 
 ---
@@ -84,10 +86,5 @@ npm run dev
 
 ---
 
-**## 🚀 Deployment**
-This portfolio is live and deployed using Netlify.
-
----
-
-**##📄 License**
+📄 License
 This project is open source and available under the MIT License.
