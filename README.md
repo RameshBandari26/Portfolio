@@ -34,19 +34,27 @@ This is a modern, responsive **developer portfolio website** built with **React 
 ## 📂 Project Structure
 
 portfolio/
+|
 ├── public/
-
+|
 │ └── icon.webp
-
+|
 ├── src/
-
+|
 │ ├── assets/ # Images and logos
+|
 │ ├── components/ # Reusable React components
+|
 | ├── pages
+|
 │ ├── App.jsx # Root component
+
 │ └── main.jsx # App entry point
+
 ├── index.html # Base HTML file
+
 ├── tailwind.config.js # Tailwind setup
+
 └── README.md
 
 
