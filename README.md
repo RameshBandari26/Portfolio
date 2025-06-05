@@ -82,18 +82,12 @@ npm install
 # Start development server
 npm run dev
 
-##🚀 Deployment
+---
+
+**## 🚀 Deployment**
 This portfolio is live and deployed using Netlify.
 
+---
 
-##🙋‍♂️ Contact
-Feel free to reach out:
-
-GitHub: RameshBandari26
-
-Email: bandariramesh377@gmail.com
-
-LinkedIn: www.linkedin.com/in/ramesh-bandari-2649r
-
-##📄 License
+**##📄 License**
 This project is open source and available under the MIT License.
