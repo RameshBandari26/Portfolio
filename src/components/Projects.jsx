@@ -56,7 +56,7 @@ const Project = () => {
       image: agritech,
       category: "webtechnologies",
       links: {
-        view: "#",
+        view: "https://agritech-ntg2.onrender.com",
         code: "https://github.com/RameshBandari26/Assured-Contract-Farming-System",
       },
       techStack: [
