@@ -1,5 +1,6 @@
 import React from "react";
 import portfolio from "../assets/portfolio.webp";
+import teamrudra from "../assets/teamrudra.webp";
 import taskManager from "../assets/ToDo.webp";
 import agritech from "../assets/agritech.webp";
 import snakeGame from "../assets/snakeGame.webp";
@@ -90,6 +91,40 @@ const Project = () => {
         },
       ],
     },
+
+    {
+  name: "Team Rudra",
+  desc: "Dynamic and responsive website built for Team Rudra. It highlights the team's mission, events, sponsors, and core members.",
+  image: teamrudra,
+  category: "html-css-js",
+  techStack: [
+    {
+      name: "HTML5",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    },
+    {
+      name: "CSS3",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    },
+    {
+      name: "JavaScript",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    },
+    {
+      name: "Tailwind CSS",
+      icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+    },
+    {
+      name: "GitHub",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    },
+  ],
+  links: {
+    view: "https://teamrudraracers.in/",
+    code: "https://github.com/RameshBandari26/Team_Rudra",
+  },
+},
+
 
     {
       name: "Snake Game",
