@@ -93,38 +93,37 @@ const Project = () => {
     },
 
     {
-  name: "Team Rudra",
-  desc: "Dynamic and responsive website built for Team Rudra. It highlights the team's mission, events, sponsors, and core members.",
-  image: teamrudra,
-  category: "html-css-js",
-  techStack: [
-    {
-      name: "HTML5",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      name: "Team Rudra",
+      desc: "Dynamic and responsive website built for Team Rudra. It highlights the team's mission, events, sponsors, and core members.",
+      image: teamrudra,
+      category: "html-css-js",
+      techStack: [
+        {
+          name: "HTML5",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+        },
+        {
+          name: "CSS3",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+        },
+        {
+          name: "JavaScript",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        },
+        {
+          name: "Tailwind CSS",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        },
+        {
+          name: "GitHub",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        },
+      ],
+      links: {
+        view: "https://teamrudraracers.in/",
+        code: "https://github.com/RameshBandari26/Team_Rudra",
+      },
     },
-    {
-      name: "CSS3",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-    },
-    {
-      name: "JavaScript",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    },
-    {
-      name: "Tailwind CSS",
-      icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
-    },
-    {
-      name: "GitHub",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-    },
-  ],
-  links: {
-    view: "https://teamrudraracers.in/",
-    code: "https://github.com/RameshBandari26/Team_Rudra",
-  },
-},
-
 
     {
       name: "Snake Game",
@@ -182,7 +181,7 @@ const Project = () => {
   ];
 
   return (
-    <section className=" py-16" id="projects">
+    <section className=" py-16 block w-full min-h-screen relative z-10" id="projects">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-amber-400 text-center mb-12">
           <FontAwesomeIcon
@@ -192,7 +191,7 @@ const Project = () => {
           My <span className="text-orange-400 font-extrabold"> Projects</span>
         </h2>
 
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <div
               key={index}
