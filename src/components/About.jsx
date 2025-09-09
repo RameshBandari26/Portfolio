@@ -1,7 +1,6 @@
-import React from 'react'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserLarge } from "@fortawesome/free-solid-svg-icons";
-import me from '../assets/me.webp'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import me from '../assets/me.webp';
 
 const About = () => {
   return (
@@ -31,7 +30,7 @@ const About = () => {
   <div className="mt-6 flex space-x-4">
 
   <a
-  href="https://drive.google.com/file/d/1bU8yxayiG4yMHPP2vyKP5Hi_RAlq2BtG/view?usp=sharing"
+  href="https://drive.google.com/file/d/1oszyuu3R1Q8o0nnc27jfdZSNW0fn44v7/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
   className="px-5 py-2 rounded-lg bg-orange-100 text-orange-800 font-medium transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-[0_0_15px_rgba(251,146,60,0.6)] dark:bg-orange-900 dark:text-white dark:hover:shadow-[0_0_15px_rgba(251,146,60,0.8)]"
@@ -39,12 +38,11 @@ const About = () => {
   View Resume
 </a>
 <a
-  href="https://drive.google.com/uc?export=download&id=1bU8yxayiG4yMHPP2vyKP5Hi_RAlq2BtG"
+  href="https://drive.google.com/uc?export=download&id=1oszyuu3R1Q8o0nnc27jfdZSNW0fn44v7"
   className="px-5 py-2 rounded-lg bg-orange-600 text-white font-medium transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-[0_0_20px_rgba(234,88,12,0.8)]"
 >
   Download Resume
 </a>
-
 
 
     

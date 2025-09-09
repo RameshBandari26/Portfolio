@@ -2,6 +2,7 @@ import React from "react";
 import portfolio from "../assets/portfolio.webp";
 import teamrudra from "../assets/teamrudra.webp";
 import taskManager from "../assets/ToDo.webp";
+import genaigallery from "../assets/genaigallery.webp";
 import agritech from "../assets/agritech.webp";
 import snakeGame from "../assets/snakeGame.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,6 +11,53 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Project = () => {
   const projects = [
+
+    {
+  name: "GenAI Gallery",
+  desc: "An AI-powered image generation and sharing platform built with the MERN stack, allowing users to create, explore, and share AI-generated images in a responsive gallery.",
+  image: genaigallery,
+  category: "mern",
+  techStack: [
+    {
+      name: "React (Vite)",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    },
+    {
+      name: "Tailwind CSS",
+      icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+    },
+    {
+      name: "Node.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    },
+    {
+      name: "Express.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    },
+    {
+      name: "MongoDB",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    },
+    {
+      name: "ClipDrop API",
+      icon: "https://clipdrop.co/favicon.ico",
+    },
+    {
+      name: "Cloudinary",
+      icon: "https://res.cloudinary.com/cloudinary-marketing/images/c_limit,w_128,h_128/f_auto,q_auto/v1/Cloudinary_Logo/Cloudinary_Logo.png",
+    },
+    {
+      name: "GitHub",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    },
+  ],
+  links: {
+    view: "https://genaigallery.netlify.app/",
+    code: "https://github.com/RameshBandari26/GenAI-Gallery",
+  },
+},
+
+
     {
       name: "Portfolio",
       desc: "My portfolio website built with React and Tailwind CSS, showcasing projects with clean design and smooth interactions.",
