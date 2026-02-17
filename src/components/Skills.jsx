@@ -28,6 +28,7 @@ const skills = [
   { name: 'JavaScript', icon: faJs, color: 'text-yellow-400' },
   { name: 'ReactJS', icon: faReact, color: 'text-cyan-400' },
   { name: 'React Native', icon: faReact, color: 'text-blue-400' },
+  
   {
   name: 'Tailwind CSS',
   image: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
@@ -49,6 +50,15 @@ const skills = [
         name: "MongoDB",
         image: "https://img.icons8.com/color/48/000000/mongodb.png"
     },
+  {
+  name: 'PHP',
+  image: 'https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg',
+  },
+  {
+  name: 'Laravel',
+  image: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg',
+  },
+
 
   { name: 'DevOps', icon: faTerminal, color: 'text-orange-400' },
 
