@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import me from '../assets/me.webp';
+import me from '../assets/my.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { scroller } from 'react-scroll';
