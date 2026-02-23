@@ -1,6 +1,6 @@
 import { faUserLarge } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import me from '../assets/me.webp';
+import me from '../assets/my.webp';
 
 const About = () => {
   return (
