@@ -1,15 +1,13 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
 import About from '../components/About';
-import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import Skills from '../components/Skills';
-import AnimatedToggle from '../components/AnimatedToggle';
-import ScrollToTopButton from '../components/ScrollToTopButton';
+import Hero from '../components/Hero';
+import Navbar from '../components/Navbar';
 import PointerEffect from '../components/PointerEffect';
+import Projects from '../components/Projects';
+import ScrollToTopButton from '../components/ScrollToTopButton';
+import Skills from '../components/Skills';
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -59,7 +57,7 @@ function App() {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.1 }}
         variants={sectionVariants}
       >
         <Projects />
