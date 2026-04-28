@@ -172,7 +172,7 @@ export default function ChatBot() {
       {/* Floating bubble */}
       <button
         onClick={() => setOpen((o) => !o)}
-        className="fixed bottom-24 right-6 z-50 w-14 h-14 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95"
+        className="fixed bottom-24 right-6 z-50 w-12 h-12 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95"
         aria-label="Open chat"
       >
         {open ? (
@@ -189,7 +189,7 @@ export default function ChatBot() {
 
       {/* Green online dot */}
       {!open && (
-        <span className="fixed bottom-[7.5rem] right-6 z-50 w-3 h-3 rounded-full bg-green-400 border-2 border-white shadow-sm" />
+        <span className="fixed bottom-[7.8rem] right-6.5 z-50 w-3 h-3 rounded-full bg-green-400 border-2 border-white shadow-sm" />
       )}
 
       {/* Chat window */}
