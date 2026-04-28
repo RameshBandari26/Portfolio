@@ -189,7 +189,7 @@ export default function ChatBot() {
 
       {/* Green online dot */}
       {!open && (
-        <span className="fixed bottom-[7.8rem] right-6.5 z-50 w-3 h-3 rounded-full bg-green-400 border-2 border-white shadow-sm" />
+        <span className="fixed bottom-[7.8rem] right-6 z-50 w-3 h-3 rounded-full bg-green-400 border-2 border-white shadow-sm" />
       )}
 
       {/* Chat window */}
