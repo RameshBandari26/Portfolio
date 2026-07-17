@@ -19,12 +19,12 @@ const About = () => {
 
   {/* Text container */}
   <div className="flex md:w-1/2 flex-col justify-start items-start w-full md:ml-30 mt-6 ">
-  <p className="text-left text-gray-500 dark:text-gray-300">
-    I'm a web developer with a strong foundation in MERN stack and real-time applications. I build modern, responsive, and scalable web apps using React, Node.js, Express, MongoDB, and TailwindCSS.
+   <p className="text-left text-gray-500 dark:text-gray-300">
+    I'm a Software Engineer passionate about building scalable, high-performance web applications and AI-powered solutions. My expertise includes full-stack development with React, Node.js, Python (FastAPI), and modern web technologies.
     <br /><br />
-    I’m also passionate about competitive programming, which sharpens my problem-solving skills and coding precision. I constantly explore new technologies to deliver efficient solutions and add value to every project I work on.
+    I have hands-on experience in Answer Engine Optimization (AEO), technical SEO, REST API development that improve website visibility and performance across AI-driven search platforms.
     <br /><br />
-    Feel free to check out my portfolio or reach out to discuss collaborations, challenges, or ideas.
+    I enjoy solving complex problems, writing clean and maintainable code, and continuously learning new technologies to build impactful software. I'm always open to collaborating on innovative projects and turning ideas into reliable digital solutions.
   </p>
 
   <div className="mt-6 flex space-x-4">
