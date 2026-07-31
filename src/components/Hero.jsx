@@ -7,10 +7,12 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const Hero = () => {
   const titles = [
-    "MERN Stack Development",
-    "Competitive Programmer",
-    "Frontend Development",
-    "Passionate Problem Solver",
+    "Software Engineer",
+    "Full Stack Developer",
+    "AEO Specialist",
+    "Python & FastAPI Developer",
+    "React Developer",
+    "Backend Engineer",
     "React Native Development",
     "Web Development"
   ];
