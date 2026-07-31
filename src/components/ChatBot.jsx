@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+﻿import { useState, useRef, useEffect } from "react";
 
 // ═══════════════════════════════════════════════════════════════
 //  KNOWLEDGE BASE — Edit this to update what the bot knows.
@@ -7,19 +7,19 @@ import { useState, useRef, useEffect } from "react";
 const KNOWLEDGE = {
   name: "Ramesh Bandari",
   title: "AI Search Engineer",
-currentCompany: "Zynetra",
+  currentCompany: "Zynetra",
 
-about:
-  "I'm Ramesh Bandari, an AI Search Engineer at Zynetra. I work on building systems that optimize and enhance how content is discovered and understood by AI-driven search engines.",
+  about:
+    "I'm Ramesh Bandari, an AI Search Engineer at Zynetra. I work on building systems that optimize and enhance how content is discovered and understood by AI-driven search engines.",
 
-techStack:
-  "AI Search Systems, Answer Engine Optimization (AEO), Web Crawling & Data Extraction, AI Agents & LLM Integrations, Data Pipelines & Response Normalization, Scoring & Ranking Systems, JavaScript (Node.js), API Development, Scalable System Design",
+  techStack:
+    "AI Search Systems, Answer Engine Optimization (AEO), Web Crawling & Data Extraction, AI Agents & LLM Integrations, Data Pipelines & Response Normalization, Scoring & Ranking Systems, JavaScript (Node.js), API Development, Scalable System Design",
 
-projects:
-  "I build systems around website crawling, AI-based analysis, and search optimization pipelines including crawler integration, response processing, scoring readiness, and scalable architectures.",
+  projects:
+    "I build systems around website crawling, AI-based analysis, and search optimization pipelines including crawler integration, response processing, scoring readiness, and scalable architectures.",
 
   experience:
-  "AI Search Engineer at Zynetra (Present): Building AI search systems, crawler integrations, and scalable pipelines.\n\nMobile Application Developer Intern at Proquestify Talent96 Solutions (OPC) Pvt. Ltd. : Developed React Native apps, integrated APIs, improved performance, and contributed to production-ready features.",
+    "AI Search Engineer at Zynetra (Present): Building AI search systems, crawler integrations, and scalable pipelines.\n\nMobile Application Developer Intern at Proquestify Talent96 Solutions (OPC) Pvt. Ltd. : Developed React Native apps, integrated APIs, improved performance, and contributed to production-ready features.",
 
   education:
     "Background in Computer Science, continuously upskilling through hands-on project development and staying current with modern web technologies.",
@@ -91,11 +91,12 @@ export default function ChatBot() {
     const userText = (text || input).trim();
     if (!userText || loading) return;
 
+    const userMessage = { role: "user", content: userText };
+    const newMessages = [...messages, userMessage];
+
     setInput("");
     setError(null);
     setShowSuggestions(false);
-
-    const newMessages = [...messages, { role: "user", content: userText }];
     setMessages(newMessages);
     setLoading(true);
 
@@ -106,58 +107,71 @@ export default function ChatBot() {
     }));
 
     try {
-  const apiKey = import.meta.env.VITE_GROQ_API_KEY;
+      const apiKey = import.meta.env.VITE_GROQ_API_KEY;
 
-  if (!apiKey) {
-    throw new Error("Groq API key missing. Check your .env file.");
-  }
+      if (!apiKey) {
+        throw new Error("Groq API key missing. Check your .env file.");
+      }
 
-  const response = await fetch(
-    "https://api.groq.com/openai/v1/chat/completions",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        model: "llama-3.1-8b-instant", // Updated to a supported model
-        max_tokens: 300,
-        temperature: 0.7,
-        messages: [
-          { role: "system", content: buildSystemPrompt() },
-          ...groqMessages,
-        ],
-      }),
+      const response = await fetch(
+        "https://api.groq.com/openai/v1/chat/completions",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${apiKey}`,
+          },
+          body: JSON.stringify({
+            model: "llama-3.1-8b-instant",
+            max_tokens: 300,
+            temperature: 0.7,
+            messages: [
+              { role: "system", content: buildSystemPrompt() },
+              ...groqMessages,
+            ],
+          }),
+        }
+      );
+
+      const responseText = await response.text();
+      let data = null;
+
+      try {
+        data = responseText ? JSON.parse(responseText) : null;
+      } catch {
+        data = null;
+      }
+
+      if (!response.ok) {
+        const errorMessage =
+          data?.error?.message ||
+          data?.message ||
+          responseText ||
+          `Error ${response.status}`;
+        throw new Error(errorMessage);
+      }
+
+      const reply =
+        data?.choices?.[0]?.message?.content?.trim() ||
+        "Sorry, I couldn't generate a response. Please try again!";
+
+      setMessages((prev) => [...prev, { role: "assistant", content: reply }]);
+    } catch (err) {
+      console.error("Groq Error:", err);
+
+      const message = err instanceof Error ? err.message : "Something went wrong";
+      setError(message);
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content:
+            "Oops! Something went wrong. Please check your Groq API key or model and try again.",
+        },
+      ]);
+    } finally {
+      setLoading(false);
     }
-  );
-
-  if (!response.ok) {
-    const err = await response.json();
-    throw new Error(err?.error?.message || `Error ${response.status}`);
-  }
-
-  const data = await response.json();
-  const reply =
-    data?.choices?.[0]?.message?.content?.trim() ||
-    "Sorry, I couldn't generate a response. Please try again!";
-
-  setMessages((prev) => [...prev, { role: "assistant", content: reply }]);
-} catch (err) {
-  console.error("Groq Error:", err); // 👈 added debug log
-
-  setError(err.message);
-  setMessages((prev) => [
-    ...prev,
-    {
-      role: "assistant",
-      content:
-        "Oops! Something went wrong. Please check your Groq API key or model and try again.",
-    },
-  ]);
-} finally {
-  setLoading(false);
-}
   }
 
   function handleKey(e) {
