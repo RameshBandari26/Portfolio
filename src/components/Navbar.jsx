@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
-import logo from '../assets/1727549378646.webp'
+import logo from '../assets/icon.webp'
 import AnimatedToggle from './AnimatedToggle';
 
 
