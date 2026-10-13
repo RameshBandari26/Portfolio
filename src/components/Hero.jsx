@@ -10,7 +10,7 @@ const Hero = () => {
     "Software Engineer",
     "Full Stack Developer",
     "AEO Specialist",
-    "Python & FastAPI Developer",
+    "Spring Boot Developer",
     "React Developer",
     "Backend Engineer",
     "React Native Development",

@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import About from '../components/About';
 import Contact from '../components/Contact';
+import Education from '../components/Education';
+import Experience from '../components/Experience';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
@@ -61,7 +63,25 @@ function App() {
         viewport={{ once: true, amount: 0.1 }}
         variants={sectionVariants}
       >
+        <Experience />
+      </motion.div>
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={sectionVariants}
+      >
         <Projects />
+      </motion.div>
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={sectionVariants}
+      >
+        <Education />
       </motion.div>
 
       <motion.div

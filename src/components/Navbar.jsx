@@ -17,8 +17,8 @@ const Navbar = () => {
           Ramesh Bandari
         </h1></div>
         <div className="hidden sm:block">
-        <ul className="flex gap-6 font-semibold items-center">
-          {['home', 'skills', 'about', 'projects', 'contact me'].map((section) => (
+        <ul className="flex gap-4 lg:gap-6 text-sm lg:text-base font-semibold items-center">
+          {['home', 'skills', 'about', 'experience', 'projects', 'education', 'contact me'].map((section) => (
             <li key={section}>
               <Link
                 to={section}

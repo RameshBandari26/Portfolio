@@ -6,23 +6,23 @@
 // ═══════════════════════════════════════════════════════════════
 const KNOWLEDGE = {
   name: "Ramesh Bandari",
-  title: "AI Search Engineer",
+  title: "Software Engineer",
   currentCompany: "Zynetra",
 
   about:
-    "I'm Ramesh Bandari, an AI Search Engineer at Zynetra. I work on building systems that optimize and enhance how content is discovered and understood by AI-driven search engines.",
+    "I'm Ramesh Bandari, a Software Engineer at Zynetra Technologies Inc. in Hyderabad. I build full-stack web and mobile applications and work on Answer Engine Optimization (AEO) and technical SEO.",
 
   techStack:
-    "AI Search Systems, Answer Engine Optimization (AEO), Web Crawling & Data Extraction, AI Agents & LLM Integrations, Data Pipelines & Response Normalization, Scoring & Ranking Systems, JavaScript (Node.js), API Development, Scalable System Design",
+    "Languages: Java, JavaScript, Python, C. Frontend: React.js, React Native, React Router, Vite, HTML, CSS, Tailwind CSS. Backend: Spring Boot, Spring Security (JWT), Spring Data JPA/Hibernate, Node.js, Express.js, REST APIs. Databases: MySQL, MongoDB. Maps: Leaflet, OpenStreetMap, Nominatim, OSRM, Geolocation API. SEO/AEO: Answer Engine Optimization, Technical SEO, JSON-LD schema markup. Tools: Git, GitHub, Maven, Docker, Vercel, Render, Netlify, Aiven, Cloudinary.",
 
   projects:
-    "I build systems around website crawling, AI-based analysis, and search optimization pipelines including crawler integration, response processing, scoring readiness, and scalable architectures.",
+    "1) Sharing is Saving - a community journey-sharing platform (React, Vite, Tailwind, Spring Boot, JWT, MySQL, Leaflet, Docker) with seat-safe joining, in-app chat, route/ETA maps and live host tracking; live at sharing-is-saving.vercel.app. 2) GenAI Gallery - MERN AI image generation app using ClipDrop API and Cloudinary. Also: Agritech, Team Rudra website, Snake Game, Task Manager and this portfolio.",
 
   experience:
-    "AI Search Engineer at Zynetra (Present): Building AI search systems, crawler integrations, and scalable pipelines.\n\nMobile Application Developer Intern at Proquestify Talent96 Solutions (OPC) Pvt. Ltd. : Developed React Native apps, integrated APIs, improved performance, and contributed to production-ready features.",
+    "Software Engineer at Zynetra Technologies Inc. (Jan 2026 - Present): AEO solutions, technical SEO, structured data, automated website-audit and crawling workflows.\n\nMobile Application Developer Intern at Proquestify Talent96 Solutions (OPC) Pvt. Ltd. (May 2025 - Jul 2025): built React Native and Node.js apps, integrated REST APIs, fixed bugs and improved performance.",
 
   education:
-    "Background in Computer Science, continuously upskilling through hands-on project development and staying current with modern web technologies.",
+    "B.Tech in Computer Science and Engineering at Rajiv Gandhi University of Knowledge Technologies, Basar (2022-2026, GPA 8.0). Pre-University Course at RGUKT Basar (2020-2022, GPA 8.3). Secondary school at ZPHS Tadoor, Nagarkurnool (2019-2020, GPA 10.0). Certifications: Java and MySQL from HackerRank.",
 
   contact:
     "GitHub: github.com/RameshBandari26 | Portfolio: rameshbandari.netlify.app",

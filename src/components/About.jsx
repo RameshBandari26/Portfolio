@@ -20,9 +20,9 @@ const About = () => {
   {/* Text container */}
   <div className="flex md:w-1/2 flex-col justify-start items-start w-full md:ml-30 mt-6 ">
    <p className="text-left text-gray-500 dark:text-gray-300">
-    I'm a Software Engineer passionate about building scalable, high-performance web applications and AI-powered solutions. My expertise includes full-stack development with React, Node.js, Python (FastAPI), and modern web technologies.
+    I'm a Software Engineer who enjoys building full-stack web and mobile applications. I work with Java, Spring Boot, React.js, React Native, Node.js, MySQL and MongoDB, and I've built secure REST APIs, live-tracking and chat features, and map-based apps with Leaflet and OpenStreetMap.
     <br /><br />
-    I have hands-on experience in Answer Engine Optimization (AEO), technical SEO, REST API development that improve website visibility and performance across AI-driven search platforms.
+    I have hands-on experience in Answer Engine Optimization (AEO), technical SEO, structured data and website-audit workflows that improve visibility across AI-driven search platforms.
     <br /><br />
     I enjoy solving complex problems, writing clean and maintainable code, and continuously learning new technologies to build impactful software. I'm always open to collaborating on innovative projects and turning ideas into reliable digital solutions.
   </p>

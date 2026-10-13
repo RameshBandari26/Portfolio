@@ -3,6 +3,7 @@ import portfolio from "../assets/portfolio.webp";
 import teamrudra from "../assets/teamrudra.webp";
 import taskManager from "../assets/ToDo.webp";
 import genaigallery from "../assets/genaigallery.webp";
+import sharingIsSaving from "../assets/sharingIsSaving.png";
 import agritech from "../assets/agritech.webp";
 import snakeGame from "../assets/snakeGame.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,8 +14,29 @@ const Project = () => {
   const projects = [
 
     {
+      name: "Sharing is Saving",
+      desc: "A journey-sharing platform where hosts publish trips and passengers join with custom pickup and drop locations, with live tracking and in-app chat.",
+      image: sharingIsSaving,
+      category: "fullstack",
+      techStack: [
+        { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { name: "Vite", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" },
+        { name: "Tailwind CSS", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" },
+        { name: "Spring Boot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+        { name: "Spring Security (JWT)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+        { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+        { name: "Leaflet + OpenStreetMap + OSRM", icon: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Openstreetmap_logo.svg" },
+        { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+      ],
+      links: {
+        view: "https://sharing-is-saving.vercel.app",
+        code: "https://github.com/RameshBandari26/Sharing_is_Saving",
+      },
+    },
+
+    {
   name: "GenAI Gallery",
-  desc: "An AI-powered image generation and sharing platform built with the MERN stack, allowing users to create, explore, and share AI-generated images in a responsive gallery.",
+  desc: "A full-stack MERN app for AI-powered image generation, using the ClipDrop API for generation and Cloudinary for storage, with a responsive UI and REST APIs.",
   image: genaigallery,
   category: "mern",
   techStack: [
@@ -60,7 +82,7 @@ const Project = () => {
 
     {
       name: "Portfolio",
-      desc: "My portfolio website built with React and Tailwind CSS, showcasing projects with clean design and smooth interactions.",
+      desc: "My personal portfolio website built with React and Tailwind CSS, showcasing my projects, skills, experience, and education with a clean, responsive design and smooth interactions.",
       image: portfolio,
       category: "react",
       techStack: [
